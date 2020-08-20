@@ -5,12 +5,19 @@
   <ul>
     <% @cocktails.each do |cocktail|  %>
     <li> 
-      <%=link_to cocktail.name, "/cocktails/#{cocktail.id}" %> 
-      <%=link_to "edit", "/cocktails/#{cocktail.id}/edit" %>
-      <%=link_to "delete", "/cocktails/#{cocktail.id}", method: :delete %>
+      <%=link_to cocktail.name, "/cocktails/#{cocktail.id}", class: "edit_link" %> 
+      
+      <button type="button" class="btn btn-primary"> 
+        <%=link_to "edit", "/cocktails/#{cocktail.id}/edit" %>
+      </button>      
+      <button type="button" class="btn btn-danger"> 
+        <%=link_to "delete", "/cocktails/#{cocktail.id}", method: :delete %>
+      </button>
     </li>  
     <% end %>
   </ul>
-  <%=link_to "new", "/cocktails/new" %>
+  <button type="button" class="btn btn-primary">
+    <%=link_to "new", "/cocktails/new" %>
+  </button>
 </div>
 

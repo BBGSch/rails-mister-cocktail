@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # post "cocktails/", to: "cocktails#create"
 
   # #read
-  # get "cocktails", to: "cocktails#index"
+  root to: "cocktails#index"
   # get "cocktails/:id", to: "cocktails#show", as: :cocktail
   
   # #update
