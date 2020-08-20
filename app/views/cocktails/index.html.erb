@@ -1,0 +1,12 @@
+<div class="container">
+
+  <h1>Fancy cocktails</h1>
+
+  <ul>
+    <% @cocktails.each do |cocktail|  %>
+    <li> <%=link_to cocktail.name, "/cocktails/#{cocktail.id}" %> </li>  
+    <% end %>
+  </ul>
+
+</div>
+
