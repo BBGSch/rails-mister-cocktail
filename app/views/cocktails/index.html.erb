@@ -4,9 +4,13 @@
 
   <ul>
     <% @cocktails.each do |cocktail|  %>
-    <li> <%=link_to cocktail.name, "/cocktails/#{cocktail.id}" %> </li>  
+    <li> 
+      <%=link_to cocktail.name, "/cocktails/#{cocktail.id}" %> 
+      <%=link_to "edit", "/cocktails/#{cocktail.id}/edit" %>
+      <%=link_to "delete", "/cocktails/#{cocktail.id}", method: :delete %>
+    </li>  
     <% end %>
   </ul>
-
+  <%=link_to "new", "/cocktails/new" %>
 </div>
 

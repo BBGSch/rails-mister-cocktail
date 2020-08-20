@@ -3,4 +3,17 @@
   <h3><%= @cocktail.name %> </h3>
   <h4>Recipe</h4>
 
+  <ul>
+    <% @cocktail.doses.each do |dose| %>
+      <li> 
+        <%= dose.description %> | <%= dose.ingredient.name %> 
+        <%=link_to "edit", "/doses/#{dose.id}/edit" %>        
+        <%=link_to "delete", "/doses/#{dose.id}", method: :delete %>        
+      </li>
+    <% end %>
+  </ul>
+  <%=link_to "new ingredient", "/cocktails/#{@cocktail.id}/doses/new" %>
 </div>
+
+
+

@@ -34,7 +34,7 @@ class CocktailsController < ApplicationController
   def destroy
     @cocktail = Cocktail.find(params[:id])
     @cocktail.destroy
-    redirect_to cocktail_path(@cocktail)
+    redirect_to "/cocktails"
   end
 
   private  
