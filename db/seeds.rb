@@ -43,7 +43,7 @@ darknstormy.photo.attach(io: darknstormypic, filename: 'darknstormypic.png', con
 whiterussianpic = URI.open('https://i.pinimg.com/originals/af/d2/4c/afd24c5047e6aaa1cfbe4dd8e8d7468f.jpg')
 whiterussian.photo.attach(io: whiterussianpic, filename: 'whiterussianpic.png', content_type: 'image/png')
 
-tomcollinspic = URI.open('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRl_1XrpyRr5HUlyXtjDBrPYTqF-TfLo7KXWw&usqp=CAU')
+tomcollinspic = URI.open('https://thehomecocktail.club/wp-content/uploads/2020/03/tom-collins-cocktail-1.jpg')
 tomcollins.photo.attach(io: tomcollinspic, filename: 'tomcollinspic.png', content_type: 'image/png')
 
 pornstarmartinipic = URI.open('https://dronkenginger.nl/wp-content/uploads/2019/02/Porn-Star-martini-400x500.jpg')
@@ -52,5 +52,5 @@ pornstarmartini.photo.attach(io: pornstarmartinipic, filename: 'pornstarmartinip
 oldfashionedpic = URI.open('https://d32miag6ta013h.cloudfront.net/master_cocktails/2869/en-us/small/old-fashioned-sml-470x594.jpg')
 oldfashioned.photo.attach(io: oldfashionedpic, filename: 'oldfashionedpic.png', content_type: 'image/png')
 
-piscosourpic = URI.open('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSqMu6GMml3uWvmdsPO5TDAJXKXdPnCfbqeHw&usqp=CAU')
+piscosourpic = URI.open('https://alushlifemanual.com/wp-content/uploads/2020/04/Pisco-Sour.jpg')
 piscosour.photo.attach(io: piscosourpic, filename: 'piscosourpic.png', content_type: 'image/png')
