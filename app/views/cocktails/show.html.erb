@@ -1,6 +1,8 @@
 <div class="container">
 
   <h3><%= @cocktail.name %> </h3>
+  <%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %>
+
   <h4>Recipe</h4>
 
   <ul>
